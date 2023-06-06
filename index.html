@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET TRACK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- HEADING -->
+        <h1>BUDGET TRACK</h1>
+    </header>
+    <main>
+        <!-- MAIN TWO CONTAINER  -->
+        <div class="container">
+            <h4>Budget</h4><br>
+            <input type="number" placeholder="Enter Your Budget" id="inputBudget"><br>
+            <button onclick="total()">Submit</button>
+        </div>
+        <!-- SECOND -->
+        <div class="container">
+            <h4>Expenses</h4><br>
+            <input type="text" placeholder="Enter Name of Product"id="inputName"><br>
+            <input type="number" placeholder="Enter Price of Product"id="inputPrice"><br>
+            <button onclick="addList()">Check</button>
+        </div>
+    </main>
+    <!-- middle box -->
+    <div class="middle">
+        <div class="inner-box"><p>Total Budget</p><p>Expenses</p>
+            <!-- <p>Balance</p> -->
+        </div>
+        <div class="inner-box"><p id="firstZero">00</p><p id="secondZero">00</p>
+            <!-- <p id="thirdZero">00</p> -->
+        </div>
+    </div>
+    <!-- list -->
+    <section >
+    <h3 class="inner-box list">EXPENSE LIST</h3>
+    <div class="inner-box list" id="list"></div>
+</section>
+
+</html>
+</body>
